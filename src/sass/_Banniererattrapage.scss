@@ -1,0 +1,89 @@
+#Infodirect{
+    background-image: url('./fonts/conseil.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-attachment: fixed;
+    position: relative;
+    font-size: large;
+    #compteurtemps{
+        display: inline-block;
+        background-color: white;
+        border-radius: 0px 0px 10px 0px;
+        box-shadow: 3px 4px 5px 1px #000;
+        position: absolute;
+        min-width: 351px;
+        padding: 5px 20px;
+        left: -316px;
+        transition: left 1s, transform .6s;
+        div{
+            display: inline-block;
+        }
+        #minutes{
+            font-size: 25px;
+        }
+        #secondes{
+            font-size: 12.5px;
+        }
+        #msecondes{
+            font-size: 6.25px;
+        }
+        #secondes::before{
+            content: ": ";
+        }
+    }
+    .paddcontainter{
+        height: 100%;
+        #infoln1{
+            display: inline-flex;
+            padding: 5px 20px;
+            background-color: white;
+            border-radius: 0px 10px 10px 0px;
+            box-shadow: 3px 4px 5px 1px #000;
+            position: absolute;
+            bottom: 25%;
+            left: -450px;
+            transition: left 1.4s, transform .6s;
+            #tempssection{
+                color: #0f8a63;
+                padding: 0px 5px;
+                #minutes1::after{
+                    content: " :";
+                }
+            }
+            #sectionblock{
+                color: #0f8a63;
+                padding-left: 5px;
+            }
+        }
+        .Consultercv{
+            display: inline-flex;
+            background-color: white;
+            border-radius: 10px 0px 0px 0px;
+            box-shadow: -4px -2px 10px 4px #000;
+            position: absolute;
+            right: 0;
+            bottom: -69px;
+            transition: bottom 1s, transform .6s;
+            p{
+                margin: 10px;
+                .btn-dl{
+                    color: $color-primary;
+                    padding: 7px 15px 7px;
+                    text-align: center;
+                    font-family: Georgia, serif;
+                    font-weight: bold;
+                    background: rgb(35, 40, 37);
+                    transition: .4s;
+                    border-width: 2px;
+                    border-style: solid;
+                    text-decoration: none;
+                }
+                .btn-dl:hover{
+                    color: rgb(35, 40, 37);
+                    background: $color-primary;
+                }
+            }
+        }
+    }
+}

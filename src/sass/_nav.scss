@@ -1,0 +1,100 @@
+@import 'variable';
+
+nav {
+    z-index: 200;
+    text-decoration: none;
+    #Backbox{
+        display: none;
+        background-color: $color-primary;
+        .icon-menu{
+            padding: 26px 32px;
+            display: block;
+            font-size: 32px;
+            background-color: $color-primary;
+            box-shadow: 0px 4px 5px 0px $color-secondaire;
+        }
+        .icon-menu:hover{
+            background-color: $color-nav;
+            color: $color-primary;
+        }
+    }
+    #menu-demo2{
+        margin-bottom: 0rem !important;
+        background-color: $color-primary;
+        box-shadow: 0px 4px 5px 0px $color-secondaire;
+        font-family: 'Ramabhadra', sans-serif;
+        font-weight: bold;
+        .icon-home{
+            background-color: $color-nav;
+            color: $color-primary;
+            padding-top: 28px;
+            padding-bottom: 32px;
+        }
+        .icon-home:hover{
+            color: #b92f2e;
+        }
+        .menu2{
+            left: 0;
+        }
+        li{
+            display: inline-block;
+            cursor: pointer;
+        }
+        a{
+            display: block;
+            padding: 26px 32px;
+            color: $color-Trois;
+            font-family: arial;
+            text-decoration: none;
+        }
+        > li {
+            position: relative;
+            transition: color linear 0.2s, background-color linear 0.2s;
+            font-size: 16px;
+            margin-left: -4px;
+            &:nth-of-type(1) {
+                &:hover {
+                    color: initial;
+                    background-color: initial;
+                }
+            }
+            .menu2{
+                right: 122px;
+            }
+            .SousMenu {
+                display: none;
+                position: absolute;
+                left: 0;
+                z-index: 1000;
+                overflow: hidden;
+                text-align: center;
+                background-color: $color-primary;
+            }
+            &:hover {
+                background-color: $color-nav;
+                > a {
+                    color: $color-primary;
+                }
+                .SousMenu {
+                    display: block;
+                    max-height: 30em;
+                    box-shadow: 10px 8px 8px $color-secondaire;
+                    li:last-child{
+                        border-bottom: none;
+                        border-style: none;
+                    }
+                    li {
+                        &:hover {
+                            background-color: $color-nav;
+                            box-shadow: 1px 8px 8px $color-secondaire;
+                            a {
+                                color: $color-primary;
+                                z-index: 1001;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import 'variable';
+@import url('https://fonts.googleapis.com/css?family=Corben:700');
+
+header{
+    height: calc(100vh - 76px);
+    color: $color-primary;
+    position: relative;
+    h1,h3{
+        font-family: 'Corben', cursive;
+        font-size: 2rem;
+        color: $color-primary;
+        letter-spacing: 0.1rem;
+        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.66);
+    }
+    .outer-div{
+      height: calc(100vh - 76px);
+        overflow: hidden; 
+    }
+    .inner-div{
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        animation: inne 10s ease-in infinite;
+        background-image: url('./fonts/coffee.jpg');
+        position: relative;
+    }
+    .headbar{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        display: none;
+        z-index: 200;
+        height: 5px;
+        .progress-bar{
+            height: 5px;
+            background-color: #f06a6a;
+            // background-image: -webkit-linear-gradient(
+            //         -45deg,
+            //         transparent 33%,
+            //         rgba(0, 0, 0, 0.1) 33%,
+            //         rgba(0, 0, 0, 0.1) 66%,
+            //         transparent 66%
+            //     ),
+            //     -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+            //     -webkit-linear-gradient(left, $color-primary, $color-nav);
+    
+            border-radius: 2px;
+            background-size: 35px 20px, 100% 100%, 100% 100%;
+            width: 0%;
+        }
+    }
+    .head{
+        text-align: center;
+        position: absolute;
+
+    }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "clipboard": "^2.0.4",
+    "del": "^4.1.1",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "prism": "^4.1.2",
+    "prismjs": "^1.16.0",
+    "vue-prism-component": "^1.1.1"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

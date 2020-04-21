@@ -1,0 +1,86 @@
+.contact {
+  height: 100vh;
+  color: $color-primary;
+  position: relative;
+  padding: 0;
+  .outer-di{
+    height: 100vh;
+    overflow: hidden; 
+    .inner-di{
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      animation: inne 10s ease-in infinite;
+      background-image: url('./fonts/arbres.jpg');
+    }
+    .formulaire{
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      width: 100%;
+      h1{
+        text-align: center;
+        font-size: 200%;
+        padding: 100px 10px 7vh;
+      }
+      form {
+        margin: 0 auto;
+        width: 84%;
+        padding: 1em;
+        background-color: #ffffff1c;
+        div + div {
+          margin-top: 1em;
+        }
+        label {
+          display: inline-block;
+          width: 74px;
+          text-align: right;
+        }
+        input, textarea {
+          font: 1em sans-serif;
+          width: 300px;
+          box-sizing: border-box;
+          border: 1px solid #999;
+          padding: 2% !important;
+          width: 80%;
+        }
+        input:focus, textarea:focus {
+          border-color: $color-Trois;
+        }
+        textarea {
+          vertical-align: top;
+          height: 5em;
+          resize: vertical;
+        }
+        .button {
+          padding-left: 90px; /* même dimension que les étiquettes */
+        }
+        button {
+          margin-left: .5em;
+        }
+      }
+      .logForm {
+        text-align: center;
+        margin-top: 25px;
+        div{ 
+          display: inline-block;
+          margin-left: 12%;
+          margin-right: 12%;
+          .icon-twitter:hover{
+            color: #1da1f2;
+          }
+          .icon-linkedin:hover{
+          color: #007bb6;
+          }
+          a{
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 35px;
+            color: white;
+          }
+        } 
+      }
+    }
+  }
+}

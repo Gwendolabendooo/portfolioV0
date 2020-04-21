@@ -1,0 +1,68 @@
+#popin{
+    transition: opacity 1s, bottom 1s !important;
+    position: fixed;
+    width: 171px;
+    font-size: 0.9rem;
+    bottom: -221px;
+    right: 9%;
+    opacity: 0;
+    visibility: hidden;
+    animation: move 2s infinite;
+    .headPop{
+        background-color: #ff4f4f;
+        border-radius: 5% 5% 0% 0%;
+        cursor: pointer;
+        color: white;
+        width: 100%;
+        bottom: 0;
+        z-index: 1;
+        h1{
+            text-align: center;
+            font-size: 0.9rem;
+            padding-top: 49px;
+    
+        }
+        #retour{
+            right: 40%;
+            top: 0px;
+            cursor: pointer;
+            position: absolute;
+            transition: all 1s;
+            margin-top: 12px;
+        }
+    }
+    .posbout{
+        background-color: white;
+        box-shadow: 0px 9px 11px 5px black;
+        #txtpop{
+            margin: 3vh 6%;
+            text-align: center;
+            padding-bottom: 80px;
+        }
+        .htbtn{
+            position: absolute;
+            bottom: 8vh;
+            left: -11px; 
+            .btn-dl {
+                color: white;
+                padding: 15px 30px 15px;
+                text-align: center;
+                font-family: Georgia, serif;
+                font-weight: bold;
+                background: rgb(35, 40, 37);
+                transition: .4s;
+                border-width: 2px;
+                border-style: solid;
+                cursor: pointer;
+                text-decoration: none;
+            }   
+            .btn-dl:hover {
+                color: rgb(35, 40, 37);
+                background: white;
+            }       
+        }
+    }
+}
+#popin:hover{
+    animation: none;
+}

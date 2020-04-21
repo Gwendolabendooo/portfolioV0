@@ -1,0 +1,133 @@
+#Stage {
+    background-color: $color-secondaire;
+    color: $color-primary;
+    margin-top: -15px;
+    .paddcode{
+        padding: 50px 0;
+        transition: opacity 1s;
+    }
+    h1{
+        padding: 100px 6% 6% 6%;
+    }
+    p:not(#nopadd){
+        padding-left: 6%;
+    }
+    img#instantaille{
+        width: 29%;
+        padding-top: calc(50vh - 38px);
+    }
+    #stage1{
+        height: 100vh;
+        .list{
+            line-height: 10vh;
+        }
+    }
+    #stage2{
+        height: auto;
+        border-top: solid;
+        h3{
+            background-image: -webkit-linear-gradient(
+                -45deg,
+                transparent 33%,
+                rgba(0, 0, 0, 0.1) 33%,
+                rgba(0, 0, 0, 0.1) 66%,
+                transparent 66%
+            ),
+            -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+            -webkit-linear-gradient((left, #9d0000, rgb(0, 0, 0)));
+            width: 0;
+            padding: 5px;
+            border-radius: 0px 22px 73px 25px;
+            transition: width 1s; 
+            background-size: 0;
+        }
+        #h3kame2{
+            min-width: 222px;
+        }
+        #Présentationkame{
+            margin-bottom: 50px;
+        }
+        #Competencekame{
+            position: relative;
+            #imgbelamb{
+                margin: 50px 0;
+                transition: opacity 1s;
+                .gauche{
+                    left: -300px;
+                }
+                .droite{
+                    right: -300px;
+                }
+            }
+            .Belambrapick{
+                width: 49%;
+                display: inline;
+                position: absolute;
+                transition: transform .5s, left 1s, right 1s;
+            }
+            .Belambrapick:hover{
+                transform: scale(1.8);
+                z-index: 100;
+                cursor: pointer;
+            }
+            .heightcode{
+                height: 70vh;
+                white-space: pre-line;
+            }
+            .langtype{
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: rgb(207, 207, 207);
+                border-radius: 0px 0px 0px 5px;
+                padding: 0px 0.5em;
+            }
+            .btntest{
+                transform: scale(0.07);
+                position: absolute;
+                top: -142px;
+                right: -168px;
+                cursor: pointer;
+                opacity: .7;
+                transition: opacity .5s;
+            }
+            .btntest:hover{
+                opacity: 1;
+            }
+            #Renault{
+                padding: 50px 0;
+                .posrenault{
+                    transition: opacity 1s;
+                    #renault1{
+                        left: -300px;
+                    }
+                    #renault2{
+                        right: -400px;
+                    }
+                    #renault3{
+                        bottom: -500px;
+                    }
+                }
+                .upwidth{
+                    transition: transform .4s, left 1s, right 1s, bottom 1s;
+                }
+                .upwidth:hover{
+                    transform: scale(1.5);
+                    cursor: pointer;
+                    z-index: 100;
+                }
+                .paddbottom{
+                    margin-bottom: 50px;
+                }
+                .paddrenault{
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                .txt-padding{
+                    padding: 50px 0;
+                    line-height: 1.6em;
+                }
+            }
+        }
+    }
+}

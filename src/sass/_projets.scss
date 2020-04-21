@@ -1,0 +1,53 @@
+.projets{
+    line-height: 2.5em;
+    h3{
+        line-height: 25px;
+        transition: all 1s;
+        transition-delay: 0.5s;
+        font-size: 0;
+        width: 0;
+        font-family: 'Ramabhadra', sans-serif;   
+    }
+    .Jeux{
+        border-bottom: 1px solid $color-Trois;
+        text-align: left;
+        padding-top: 90px;
+        margin-top: 10px;
+    }
+    .position{
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+        .box-slider{
+            position: relative;
+            width: 100%;
+            .exterieur{
+                position: relative;
+                transition: transform .5s;
+                width: 275px;
+                height: 450px;
+                transform: scale(0.8);
+                margin: 0 auto;
+                border-width: 25px;
+                border-style: solid;
+                border-color: $color-Trois;
+                border-radius: 32px;
+                background-color: $color-Trois;
+                cursor: pointer;
+                .caroutaille{
+                    width: 100%;
+                }
+            }
+            .exterieur:hover{
+                transform: scale(1);
+            }
+        }
+    }
+    .fondpc img{
+        transition: transform .5s;
+        cursor: pointer;
+    }
+    .fondpc img:hover{
+        transform: scale(1.2);
+    }
+}
